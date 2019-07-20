@@ -1,0 +1,31 @@
+body {
+    .button-carousel {
+        position: relative;
+        .btnRestart {
+            position: absolute;
+            z-index: 1;
+        }
+    }
+    .main-carousel {
+        .carousel-cell {
+            width: 100%;
+            height: 50vh;
+            min-height: 250px;
+            margin-right: 10px;
+            background-size: cover;
+            .container {
+                width: 1200px;
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                color: white;
+                font-size: 20px;
+            }        
+        }
+    }
+    .progress-bar {
+        height: 20px;
+        width: 0;
+        background: #333;
+    }
+}
