@@ -20,6 +20,20 @@ var flkty = new Flickity(elem, {
     hash: true
 });
 
+// Initialize and add the map
+window.initMap = function() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 5,
+        center: carouselData[0].coords
+    });
+    for (var i = 0; i < carouselData.length; i++){
+        var marker = new google.maps.Marker({
+        position: carouselData[i].coords,
+        map: map
+        }); 
+    }
+}
+
 //button restart
 var restartButton = document.querySelector('.btnRestart');
 

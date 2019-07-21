@@ -24,6 +24,12 @@ body .main-carousel .carousel-cell .container {
   font-size: 20px;
 }
 
+body #map {
+  height: 50vh;
+  width: 100%;
+  background-color: grey;
+}
+
 body .progress-bar {
   height: 20px;
   width: 0;
