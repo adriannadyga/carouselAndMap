@@ -1,4 +1,16 @@
 'use strict'
+
+//mustache
+var templateCarousel = document.getElementById('carousel-template').innerHTML;
+var carousel = document.querySelector('.main-carousel');
+var carouselElements = '';
+
+for (var i = 0; i < carouselData.length; i++){
+  carouselElements += Mustache.render(templateCarousel, carouselData[i]);
+}
+
+carousel.innerHTML = carouselElements;
+
 //flickity
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity(elem, {
