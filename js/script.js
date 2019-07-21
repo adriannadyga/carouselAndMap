@@ -32,6 +32,9 @@ window.initMap = function() {
         map: map
         }); 
     }
+    marker.addEventListener('click', function(){
+        flkty.select(i);
+    })
 }
 
 //button restart
