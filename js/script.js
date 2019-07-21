@@ -46,7 +46,7 @@ window.initMap = function() {
     }
   }
   flkty.on('change', function(index) {
-    map.setCenter(carouselData[index].coords)
+    map.panTo(carouselData[index].coords)
   })
 }
 
